@@ -10,10 +10,9 @@ import { Text, Pressable } from 'react-native';
 
 const Stack = createNativeStackNavigator();
 
-export default function App() {
+export const AboutStack = () => {
   return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName='HomeWithProp' 
+    <Stack.Navigator initialRouteName='HomeWithProp' 
       screenOptions={{
         headerStyle: {
           backgroundColor: "#6a51ae"
@@ -43,6 +42,13 @@ export default function App() {
           // })}                                 
         />
       </Stack.Navigator>
+  )
+}
+
+export default function App() {
+  return (
+    <NavigationContainer>
+      <AboutStack />
     </NavigationContainer>
   );
 }

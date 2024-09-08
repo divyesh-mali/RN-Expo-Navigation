@@ -27,23 +27,12 @@ export default function App() {
         }
       >
         <Tab.Screen 
-        name="Course List" 
+        name="Indica8or" 
         component={CourseListScreen} 
         options={{
-          tabBarLabel: "Courses",
-          tabBarIcon: ({ color }) => (<Ionicons name="bookmark" size={20} color={color}/>
+          tabBarLabel: "Home",
+          tabBarIcon: ({ color }) => (<Ionicons name="home" size={20} color={color}/>
           ),
-        }}
-        />
-
-        <Tab.Screen 
-        name="Profile" 
-        component={ProfileScreen}
-        options={{
-          tabBarLabel: "My Profile",
-          tabBarIcon: ({ color }) => (<Ionicons name="person" size={20} color={color}/>
-          ),
-          tabBarBadge: 3,
         }}
         />
 
@@ -62,6 +51,17 @@ export default function App() {
             headerShown: false, // Uncomment to see the change. This will hide the header of the stack navigator. 
             tabBarIcon: ({ color }) => (<Ionicons name="information-circle" size={20} color={color}></Ionicons>)
           }}
+        />
+
+        <Tab.Screen 
+        name="Profile" 
+        component={ProfileScreen}
+        options={{
+          tabBarLabel: "My Profile",
+          tabBarIcon: ({ color }) => (<Ionicons name="person" size={20} color={color}/>
+          ),
+          tabBarBadge: 3,
+        }}
         />
 
       </Tab.Navigator>

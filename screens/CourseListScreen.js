@@ -4,7 +4,7 @@ import React from 'react'
 const CourseListScreen = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>CourseListScreen</Text>
+      <Text style={styles.text}>HomeScreen</Text>
     </View>
   );
 };
